@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(167, 167, 167, 0.8)), url("저문 로고.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cong {
+  padding: 250px;
+  margin: 50px;
+}
+
+.cong p {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Song Myung", serif;
+}
+
+.section {
+  width: 100%;
+  height: 500px;
+}
+.section .name {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Sunflower", sans-serif;
+  font-size: 40px;
+}
+.section .init {
+  height: 340px;
+  margin: 15px 0px 15px 80px;
+  overflow: hidden;
+}
+.section .shop {
+  width: 220px;
+  height: 340px;
+  margin: 0px 10px;
+  float: left;
+}
+.section .pic {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  overflow: hidden;
+}
+.section .desc {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+}
+.section .explore {
+  float: right;
+  margin-right: 30px;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: rgb(241, 240, 240);
+  background-image: linear-gradient(rgba(243, 243, 243, 0.8), rgba(167, 167, 167, 0.8)), url("저문 로고.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member {
+  width: 100%;
+  height: 30px;
+}
+
+.member ul {
+  float: right;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.member-inner {
+  display: inline-block;
+  width: 60px;
+  padding: 5px;
+  font-size: small;
+}
+
+ul {
+  text-align: center;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-content {
+  display: inline-block;
+  width: 110px;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: beige;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #fff;
+}
+
+.bar {
+  width: 100%;
+  height: 80px;
+}
+.bar .nav {
+  width: 82%;
+  margin: 35px 18% 0px;
+  font-size: 30px;
+}
+
+.side {
+  width: 18%;
+  height: 500px;
+  float: left;
+}
+
+.footer-white {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  float: left;
+}
+
+.about {
+  width: 82%;
+  height: 500px;
+  float: left;
+}
+.about .Q {
+  padding: 15px;
+  font-size: larger;
+}
+.about .asw {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-top: 3px solid #444444;
+  border-bottom: 3px solid #444444;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+}
+
+th, td {
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+
+thead {
+  background-color: #efefef;
+}
+
+.slide {
+  cursor: pointer;
+}
+
+.panel {
+  display: none;
+  background-color: rgb(251, 251, 224);
+  cursor: default;
+}
+
+.section-faq {
+  width: 64%;
+  height: 500px;
+  float: left;
+}
+
+/*# sourceMappingURL=style.cssCLTR640001.map */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>저문/우리 지역 찾기</title>
+    <!-- style 파일 적용-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+    <header>
+        <!-- 상단 로고 -->
+        <div class="header">
+            <a href="index.html"><img src="저문 로고.png"></a>
+        </div>
+    
+        <!-- 로그인/가입바 -->
+        <div class="member">
+            <ul>
+                <li class="member-inner"><a href="로그인.html">로그인</a></li>
+                <li class="member-inner"><a href=#>회원가입</a>
+            </ul>
+        </div> 
+        <!-- 메뉴 -->
+        <nav>
+            <div>
+                <ul style="list-style-type:none;">
+                    <li class="menu-content"><a href="소개.html"><p>소개</p></a></li>
+                    <li class="menu-content"><a href="우리 지역 찾기.html"><p>우리 지역 찾기</p></a></li>
+                    <li class="menu-content"><a href="등록하기.html"><p>등록하기</p></a></li>
+                    <li class="menu-content"><a href="FAQ.html"><p>FAQ</p></a></li>
+                    <li class="menu-content"><a href="후기.html"><p>후기</p></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <hr>
+        <div class="bar">
+            <div class="bar nav">
+                <p>>후기</p>
+            </div>
+            
+        </div>
+        <aside>
+            <div class="side">
+            </div>
+        </aside>
+        <article>
+            <div class="list">
+                <table border="1" class="table-reg" id="replyTable">
+                    <colgroup>
+                        <col width="10%">
+                        <col width="50%">
+                        <col width="20%">
+                        <col width="20%>"
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>내용</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td style="text-align: left;">즐거운 경험이었습니다.</td>
+                            <td>익명</td>
+                            <td>2022. 3. 30.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td style="text-align: left;">다음에 또 참여하려구요.</td>
+                            <td>왕왕</td>
+                            <td>2022. 4. 2.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td style="text-align: left;">최애 서점을 찾았습니다.</td>
+                            <td>익명</td>
+                            <td>2022. 4. 9.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td style="text-align: left;">좀 더 다양한 모임이 추가되었으면 좋겠어요.</td>
+                            <td>익명</td>
+                            <td>2022. 4. 16.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td style="text-align: left;">감사합니다!</td>
+                            <td>별님</td>
+                            <td>2022. 4. 23.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="reply">
+                    <div class="reply-side"></div>
+                    <div class="reply-form-center">
+                        <div class="reply-form">
+                            <input type="text" placeholder=" 번호" id="inNum">
+                            <input type="text" placeholder=" 닉네임" id="inName">
+                            <input type="text" placeholder=" 내용" id="inReply">
+                        </div>
+                        <button onclick="tableAppend()" class="button-reply">댓글 등록</button>
+                    </div>
+                    <div class="reply-side"></div>
+                </div>
+            </div>
+        </article>   
+    </section>
+    <script>
+        function tableAppend(){
+            var tc = new Array();
+            var html = '';
+                        
+            var num = $("#inNum").val(); 
+            var reply = $("#inReply").val();
+            var name = $("#inName").val();
+            var dt = new Date();
+            var date = dt.toLocaleDateString();
+
+            if(num==''||reply==''||name==''){
+                alert("내용을 다 채워주세요");
+
+                $("#inNum").val('');
+                $("#inReply").val('');
+                $("#inName").val('');
+
+                return;
+            } 
+
+            html += '<tr>';
+            html += '<td>'+num+'</td>';
+            html += '<td style="text-align: left;">'+reply+'</td>';
+            html += '<td>'+name+'</td>';
+            html += '<td>'+date+'</td>';
+            html += '</tr>';
+                        
+            $("#replyTable").append(html);
+            // 등록 이후 다시 입력창 초기 내용 보여줌           
+            $("#inNum").val('');
+            $("#inReply").val('');
+            $("#inName").val('');
+        }
+    </script>
+    <footer class="footer-white">
+        <p>Copyright 2022. 창업동아리 저문 all right reserved. designed by 여경</p>
+    </footer>
+</body>
+</html>

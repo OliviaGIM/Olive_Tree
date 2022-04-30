@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>저문/FAQ</title>
+    <!-- style 파일 적용-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".slide").on("click",function(){
+                $(this).next(".panel").slideToggle()
+                if($("td").hasClass("red")===true){
+                    $("td").removeClass("red")
+                }
+            });
+            $(".panel").on("click",function(){
+                $(this).slideUp()
+            });
+            $("#search-btn").on("click",function(){
+                var find = $("#search").val();
+                var cnt=0;
+
+                $( '.slide td:contains('+find+')' ).addClass("red");
+                if($('.slide td:contains('+find+')').hasClass("red")===true){
+                    cnt=1;
+                }
+                if(cnt!=1){
+                    alert('입력하신 <'+find+'> 항목을 찾을 수 없습니다.');
+                    $("#search").val('');
+                }
+            });
+        }) 
+    </script>
+</head>
+<body>
+    <header>
+        <!-- 상단 로고 -->
+        <div class="header">
+            <a href="index.html"><img src="저문 로고.png"></a>
+        </div>
+    
+        <!-- 로그인/가입바 -->
+        <div class="member">
+            <ul>
+                <li class="member-inner"><a href="로그인.html">로그인</a></li>
+                <li class="member-inner"><a href=#>회원가입</a>
+            </ul>
+        </div> 
+        <!-- 메뉴 -->
+        <nav>
+            <div>
+                <ul style="list-style-type:none;">
+                    <li class="menu-content"><a href="소개.html"><p>소개</p></a></li>
+                    <li class="menu-content"><a href="우리 지역 찾기.html"><p>우리 지역 찾기</p></a></li>
+                    <li class="menu-content"><a href="등록하기.html"><p>등록하기</p></a></li>
+                    <li class="menu-content"><a href="FAQ.html"><p>FAQ</p></a></li>
+                    <li class="menu-content"><a href="후기.html"><p>후기</p></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <hr>
+        <div class="bar">
+            <div class="bar nav">
+                <p>>FAQ</p>
+            </div> 
+        </div>
+        <aside>
+            <div class="side">
+            </div>
+        </aside>
+        <article>
+            <div class="section-faq">
+                <table border="1" class="table-faq">
+                    <colgroup>
+                        <col width="30%">
+                        <col width="70%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="slide">
+                            <td style="text-align: center;">1</td>
+                            <td>뭐하는 곳?</td>  
+                        </tr>
+                        <tr class="panel">
+                            <td></td>
+                            <td>글쓰기 모임 구해요</td>
+                        </tr>
+                        <tr class="slide">
+                            <td style="text-align: center;">2</td>                          
+                            <td>등록은 어떻게?</td>
+                        </tr>
+                        <tr class="panel">
+                            <td></td>
+                            <td>등록하기 참고</td>
+                        </tr>
+                        <tr class="slide">
+                            <td style="text-align: center;">3</td>
+                            <td>주소지를 변경하고 싶어요</td>
+                        </tr>
+                        <tr class="panel">
+                            <td></td>
+                            <td>생각해볼게요</td>
+                        </tr>
+                        <tr class="slide">
+                            <td style="text-align: center;">4</td>
+                            <td>가입해야 하나요?</td>
+                        </tr>
+                        <tr class="panel">
+                            <td></td>
+                            <td>당연한 소리를</td>
+                        </tr>
+                    </tbody>  
+                </table>
+                <!-- 검색창     -->
+                <div class="search-faq">
+                    <input id="search" class="form-faq" type="text" name="search-text" placeholder=" 검색어를 입력하세요">
+                    <input id="search-btn" class="search-btn-faq" type="submit" name="search" value="검색">
+                </div>
+            </div>           
+        </article>
+        <aside>
+            <div class="side">
+            </div>
+        </aside>
+    </section>
+    <footer class="footer-white">
+        <p>Copyright 2022. 창업동아리 저문 all right reserved. designed by 여경</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,458 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed {
+  width: 100%;
+  height: 700px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(167, 167, 167, 0.8)), url("저문 배경.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cong {
+  padding: 250px;
+  margin: 50px;
+}
+
+.cong p {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Song Myung", serif;
+}
+
+.section {
+  width: 100%;
+  height: 500px;
+}
+
+.section2 {
+  width: 100%;
+  height: 750px;
+}
+
+.name {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Sunflower", sans-serif;
+  font-size: 40px;
+}
+
+.init {
+  height: 340px;
+  margin: 15px 10% 15px 10%;
+  overflow: hidden;
+}
+
+.init2 {
+  height: 600px;
+  margin: 15px 10% 15px 10%;
+  overflow: hidden;
+}
+
+.shop {
+  width: 200px;
+  height: 300px;
+  margin: 0px 10px;
+  float: left;
+}
+
+.pic {
+  width: 150px;
+  height: 150px;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.desc {
+  width: 180px;
+  height: 65px;
+  padding: 10px;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 15px 22px 0px 22px;
+  transition: all 0.2s ease;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 171, 157, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #ffab9d;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.96);
+}
+
+.explore {
+  width: 190px;
+  height: 60px;
+  position: relative;
+  top: -100px;
+  left: 80%;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: rgb(241, 240, 240);
+  background-image: linear-gradient(rgba(243, 243, 243, 0.8), rgba(167, 167, 167, 0.8)), url("저문 로고.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.member {
+  width: 100%;
+  height: 30px;
+}
+
+.member ul {
+  float: right;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.member-inner {
+  display: inline-block;
+  width: 60px;
+  padding: 5px;
+  font-size: small;
+}
+
+ul {
+  text-align: center;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-content {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #fff;
+}
+
+.bar {
+  width: 100%;
+  height: 80px;
+}
+.bar .nav {
+  width: 82%;
+  margin: 35px 18% 0px;
+  font-size: 30px;
+}
+
+.side {
+  width: 18%;
+  height: 500px;
+  float: left;
+}
+
+.footer-white {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  float: left;
+}
+
+.about {
+  width: 82%;
+  height: 500px;
+  float: left;
+}
+.about .Q {
+  padding: 15px;
+  font-size: larger;
+}
+.about .asw {
+  padding: 15px;
+}
+
+.svg {
+  width: 64%;
+  height: 700px;
+  float: left;
+  overflow: hidden;
+}
+
+.svg-object {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list {
+  width: 64%;
+  height: 500px;
+  float: left;
+}
+.list .button {
+  display: inline-block;
+  margin: 40px 0 15px 88%;
+  padding: 7px 25px 7px;
+}
+
+.table-reg {
+  width: 100%;
+  border-top: 3px solid #444444;
+  border-bottom: 3px solid #444444;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+}
+.table-reg th, .table-reg td {
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+  text-align: center;
+}
+.table-reg thead {
+  background-color: #efefef;
+}
+
+.section-faq {
+  width: 64%;
+  height: 500px;
+  float: left;
+}
+
+.table-faq {
+  width: 100%;
+  border-top: 3px solid #444444;
+  border-bottom: 3px solid #444444;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+}
+.table-faq th, .table-faq td {
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+.table-faq thead {
+  background-color: #efefef;
+}
+
+.slide {
+  cursor: pointer;
+}
+
+.panel {
+  display: none;
+  background-color: rgb(251, 251, 224);
+  cursor: pointer;
+}
+
+.search-faq {
+  width: 50%;
+  height: 40px;
+  margin: 50px 25%;
+  float: left;
+}
+.search-faq .form-faq {
+  width: 80%;
+  height: 25px;
+  display: inline-block;
+}
+.search-faq .search-btn-faq {
+  width: 70px;
+  height: 30px;
+  font-size: large;
+  display: inline-block;
+}
+
+.reply {
+  width: 100%;
+  height: 200px;
+  float: left;
+}
+.reply .reply-side {
+  width: 10%;
+  height: 200px;
+  float: left;
+}
+.reply .reply-form {
+  width: 100%;
+  height: 170px;
+  position: relative;
+  left: 185px;
+}
+.reply .reply-form-center {
+  width: 80%;
+  height: 190px;
+  margin-top: 10px;
+  float: left;
+}
+.reply #inNum {
+  width: 250px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px rgb(12, 12, 81);
+  float: left;
+}
+.reply #inName {
+  width: 250px;
+  height: 40px;
+  border-top: none;
+  border-left: dotted 1px gray;
+  border-right: none;
+  border-bottom: solid 3px rgb(12, 12, 81);
+  float: left;
+}
+.reply #inReply {
+  width: 500px;
+  height: 70px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px rgb(12, 12, 81);
+  float: left;
+}
+.reply .button-reply {
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: -30px;
+  left: 550px;
+  border: solid 1px rgb(87, 87, 224);
+  border-radius: 10px;
+  background-color: rgb(87, 87, 224);
+}
+
+.form {
+  width: 64%;
+  height: 500px;
+  float: left;
+}
+.form .login {
+  width: 500px;
+  height: 350px;
+  margin: 0px 300px;
+  border: dashed 3px rgb(133, 133, 133);
+  border-radius: 10px;
+}
+
+.form-input {
+  width: 350px;
+  height: 240px;
+  padding: 55px 75px;
+  font-size: large;
+}
+.form-input #input-id {
+  width: 350px;
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px rgb(107, 107, 255);
+}
+.form-input #input-pw {
+  width: 350px;
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px rgb(107, 107, 255);
+}
+.form-input .submit {
+  width: 150px;
+  height: 35px;
+  margin: 40px 100px;
+  border: solid 3px rgb(107, 107, 255);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: large;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
